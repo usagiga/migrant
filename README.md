@@ -13,14 +13,14 @@ Migrate to esa.io from your wiki tool.
 
 To use migrant, please set arguments correctly.
 
-- `--team "TEAM_NAME_HERE"`
+- `--team "TEAM_NAME_HERE"` (Required)
     - Team name in your esa.io team.
-- `--key "API_KEY_HERE"`
+- `--key "API_KEY_HERE"` (Required)
     - Personal Access Token in your esa.io team.
-- `--max-posts 75`
+- `--max-posts 75` (Optional, default 70)
     - The number of posts within window size(wrote below).
     - More info of rate limit can found in [official esa.io docs](https://docs.esa.io/posts/102) .
-- `--window-size 15`
+- `--window-size 15` (Optional, default 15)
     - Waiting to reset rate limit these minutes.
     - NOTE : migrant is NOT read `X-RateLimit-Reset` or `429 Too Many Requests` .
 
